@@ -41,7 +41,7 @@ def main(production: bool, check: bool) -> None:
 
     if production:
         boto3.client("s3").put_object(
-            Bucket=get_global_config()["state_machine_aws_bucket"],
+            Bucket=get_global_config()["state_machine_master_aws_bucket"],
             Key=f"{AWS_WEEKLY_GREEN_METRIC}/blocker_{int(time.time() * 1000)}.json",
             Body=json.dumps(num_blocker_by_team),
         )
