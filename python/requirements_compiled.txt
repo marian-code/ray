@@ -160,7 +160,7 @@ aws-sam-translator==1.81.0
 aws-xray-sdk==2.12.1
     # via moto
 ax-platform==0.3.2
-    # via -r /home/ubuntu/ray/ci/../python/requirements/ml/tune-requirements.txt
+    # via -r /ray/ci/../python/requirements/ml/tune-requirements.txt
 azure-cli-core==2.40.0
     # via -r /home/ubuntu/ray/ci/../python/requirements/test-requirements.txt
 azure-cli-telemetry==1.0.8
@@ -382,7 +382,7 @@ cython==0.29.32
     #   gpy
 dask==2022.10.1
     # via
-    #   -r /home/ubuntu/ray/ci/../python/requirements/ml/data-requirements.txt
+    #   -r /ray/ci/../python/requirements/ml/data-requirements.txt
     #   distributed
 databricks-cli==0.18.0
     # via mlflow
@@ -473,6 +473,8 @@ evaluate==0.4.0
     # via -r /home/ubuntu/ray/ci/../python/requirements/ml/train-test-requirements.txt
 everett==3.3.0
     # via comet-ml
+exceptiongroup==1.2.0
+    # via anyio
 execnet==2.0.2
     # via pytest-shutil
 executing==2.0.1
@@ -489,6 +491,8 @@ fastapi==0.109.2
     #   -r /home/ubuntu/ray/ci/../python/requirements/test-requirements.txt
     #   aim
     #   gradio
+fastavro==1.9.4
+    # via -r /ray/ci/../python/requirements/ml/data-test-requirements.txt
 fasteners==0.19
     # via
     #   google-apitools
@@ -1084,7 +1088,7 @@ more-itertools==10.1.0
 mosaicml==0.14.1
     # via -r /home/ubuntu/ray/ci/../python/requirements/ml/train-test-requirements.txt
 moto==4.2.12
-    # via -r /home/ubuntu/ray/ci/../python/requirements/test-requirements.txt
+    # via -r /ray/ci/../python/requirements/test-requirements.txt
 mpmath==1.3.0
     # via sympy
 msal==1.18.0b1
@@ -2151,7 +2155,7 @@ stanio==0.3.0
     # via cmdstanpy
 starlette==0.36.3
     # via
-    #   -r /home/ubuntu/ray/ci/../python/requirements.txt
+    #   -r /ray/ci/../python/requirements.txt
     #   fastapi
 statsforecast==1.7.0
     # via -r /home/ubuntu/ray/ci/../python/requirements/ml/tune-test-requirements.txt
